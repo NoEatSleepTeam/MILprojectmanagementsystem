@@ -1,0 +1,19 @@
+.profile_projectName{
+    font-size:36px;
+    font-weight: bold;
+}
+.proifle_project{
+    padding: 20px;
+}
+.profile_projectDetails{
+
+    font-size: inherit;
+}
+.display_inline{
+    display: inline-block;
+
+}
+.profile_contributor_images{
+    padding-top: 20px;
+    padding-buttom: 20px;
+}
