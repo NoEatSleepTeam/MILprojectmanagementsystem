@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1>create project</h1>
-</body>
-</html>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">MIL</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="pull-right" href="/profile">Hello User</a></li>
+            <li><a class="pull-right" href="/logout">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="create_project_mainArea">
+        <div class="create_project_Heading">Create Project</div>
+            <div class="create_project_Details">
+                <form class="create_project_createProjectForm form-group">
+                    <label>Project name</label>
+                    <input type="text" class="form-control" placeholder="Water conservation project">
+
+                    <label>Project description</label>
+                    <textarea class="form-control" rows="5" placeholder="Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada."></textarea>
+
+                    <label>Github url</label>
+                    <input type="text" class="form-control" placeholder="github.com/someProject">
+
+                    <label>Add project memebers</label>
+                    <input type="text" class="form-control" placeholder="Suresh">
+
+                    <input type="submit" class="btn  btn-success btn-lg create_project_createBtn" value="Create project">
+
+                </form>
+            </div>
+    </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>

@@ -40,3 +40,23 @@
     margin: auto;
 
 }
+.create_project_mainArea{
+    padding: 20px;
+}
+.create_project_Heading{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.create_project_createProjectForm > input {
+    margin-bottom: 20px;
+}
+
+.create_project_createProjectForm > textarea {
+    margin-bottom: 20px;
+}
+.create_project_createBtn {
+    margin: auto;
+    display: block;
+
+}
