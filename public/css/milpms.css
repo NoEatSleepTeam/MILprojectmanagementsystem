@@ -17,3 +17,26 @@
     padding-top: 20px;
     padding-buttom: 20px;
 }
+.project_projectName{
+    font-size: 48px;
+    text-align: center;
+    font-weight: bolder;
+}
+.project_projectDescriptionHead{
+    font-size: 36px;
+
+}
+.project_projectDescription{
+    font-size: medium;
+}
+.project_projectDetails{
+    padding: 20px;
+}
+.project_github{
+    padding: 15px;
+}
+.project_screenshots > .row >.col-md-4> img{
+   text-align: center;
+    margin: auto;
+
+}
