@@ -1,0 +1,24 @@
+{
+  "name": "mil",
+  "version": "1.0.0",
+  "description": "## This is a project on Web based (MEAN stack) Project management system for MIL. students can create profile , projects form teams and submit their projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoEatSleepTeam/MILprojectmanagementsystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoEatSleepTeam/MILprojectmanagementsystem/issues"
+  },
+  "homepage": "https://github.com/NoEatSleepTeam/MILprojectmanagementsystem#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.1"
+  }
+}
