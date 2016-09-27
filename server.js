@@ -21,8 +21,8 @@ app.use(express.static(__dirname + '/public'));
 
 
 passport.use(new GithubStrategy({
-    clientID:'',
-    clientSecret:'',
+    clientID:process.env.CLIENT_ID,
+    clientSecret:process.env.CLIENT_SECRET,
     callbackURL:'http://localhost:3000/auth/github/callback'
 }, function (accessToken, refreshToken, profile, done) {
     done(null,{accessToken:accessToken,profile:profile});
