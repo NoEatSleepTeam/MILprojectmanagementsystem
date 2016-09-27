@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var GithubStrategy = require('passport-github').Strategy;
 var app = express();
+var port = process.env.PORT || 5000;
 
 
 app.use(bodyPraser.json());
@@ -41,7 +42,7 @@ passport.deserializeUser(function (user, done) {
 //    res.sendfile('/public/index.html');
 //});
 
-app.listen('3000',function () {
-    console.log('running on 3000');
+app.listen(port,function () {
+    console.log('running on '+port);
 
 })
