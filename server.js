@@ -37,7 +37,7 @@ passport.serializeUser(function (user, done) {
 
 passport.deserializeUser(function (user, done) {
 
-    done(null,user);
+    done(null,obj);
 });
 
 app.get('/auth/github', passport.authenticate('github'));
@@ -46,6 +46,15 @@ app.get('/auth/github/callback', passport.authenticate('github', {
     successRedirect: '/success',
     failureRedirect:'/error'
 }));
+
+app.get('/success', function(req, res, next) {
+    res.send('Successfully logged in.');
+});
+
+app.get('/error', function(req, res, next) {
+    res.send("Error logging in.");
+});
+
 //app.get('/', function (req, res) {
 //
 //    res.sendfile('/public/index.html');
