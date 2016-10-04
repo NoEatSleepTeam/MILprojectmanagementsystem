@@ -51,10 +51,10 @@ app.get('/error', function(req, res, next) {
     res.send("Error logging in.");
 });
 
-//app.get('/', function (req, res) {
-//
-//    res.sendfile('/public/index.html');
-//});
+app.get('/', function (req, res) {
+
+    res.send('api working');
+});
 
 app.listen(port,function () {
     console.log('running on '+port);
