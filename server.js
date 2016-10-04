@@ -14,14 +14,7 @@ var port = process.env.PORT || 5000;
 app.use(bodyPraser.json());
 app.use(bodyPraser.urlencoded({extended:false}));
 app.use(express.static(__dirname + '/public'));
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
 app.use(passport.initialize());
-app.use(passport.session());
-app.use(app.router);
 
 passport.use(new GithubStrategy({
     clientID:process.env.CLIENT_ID,
