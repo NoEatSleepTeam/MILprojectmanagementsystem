@@ -16,6 +16,8 @@ app.config(function($routeProvider) {
 
         }).when("/createProject",{
             templateUrl:"create_project.html"
+        }).when("/auth/github/callback",{
+            templateUrl:"/auth/github/callback"
         }).otherwise({
             templateUrl:"not_found.html"
         });

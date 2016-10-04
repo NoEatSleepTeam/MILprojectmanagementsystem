@@ -25,7 +25,9 @@ passport.use(new GithubStrategy({
     clientSecret:process.env.CLIENT_SECRET,
     callbackURL:'https://dscemil.herokuapp.com/auth/github/callback'
 }, function (accessToken, refreshToken, profile, done) {
-    done(null,{accessToken:accessToken,profile:profile});
+    process.nextTick(function() {
+        return done(null, profile);
+    });
 }));
 
 
@@ -37,6 +39,13 @@ passport.deserializeUser(function (user, done) {
 
     done(null,user);
 });
+
+app.get('/auth/github', passport.authenticate('github'));
+
+app.get('/auth/github/callback', passport.authenticate('github', {
+    successRedirect: '/success',
+    failureRedirect:'/error'
+}));
 //app.get('/', function (req, res) {
 //
 //    res.sendfile('/public/index.html');
